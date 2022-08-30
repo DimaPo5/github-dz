@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		
+		<title>Prizm Responsive Coming Soon Theme - Help Documentation</title>
+		
+		<!-- CSS style -->
+		<link rel="shortcut icon" href="assets/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="assets/css/global.css" />
+		<link rel="stylesheet" type="text/css" href="assets/css/fontello.css" media="all" />
+		<link rel="stylesheet" type="text/css" href="assets/js/google-code-prettify/prettify.css" />
+		
+		<!-- Google web fonts -->
+		<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600,600italic,700,700italic,800' rel='stylesheet' type='text/css'>
+		
+		<!-- jQuery -->
+		<script type="text/javascript" src="assets/js/jquery.js"></script>
+		<script type="text/javascript" src="assets/js/globals.js"></script>
+		<script type="text/javascript" src="assets/js/google-code-prettify/prettify.js"></script>
+	</head>
+	<body>
+		
+		<!-- Header -->
+		<header>
+			<div class="container">
+				<div class="logo">Prizm Responsive Coming Soon Theme</div>
+				<div class="slogan">Responsive minimal, business under construction / landing page / one page template</div>
+			</div>
+		</header>
+		
+		<!-- Container -->
+		<div class="container">	
+		
+			<div class="avatar">
+				<a href="http://www.codegrape.com/user/flashblue"><img src="assets/images/flashblue.png" width="256" height="50" alt="FlashBlue" title="FlashBlue" /></a>
+			</div>
+		
+			<div class="author">
+				Created: <strong>03/05/2016</strong><br />
+				Last Update: <strong>05/05/2016</strong><br />
+				By: <strong><a href="http://www.codegrape.com/user/flashblue/portfolio">FlashBlue</a></strong><br />
+				Profile: <strong><a href="http://www.codegrape.com/user/flashblue">www.codegrape.com/user/flashblue</a></strong><br />
+				Website: <strong><a href="http://www.flashbluedesign.com/">www.flashbluedesign.com</a></strong><br />
+				E-mail: <strong><a href="mailto:flashblue80@hotmail.com">flashblue80@hotmail.com</a></strong><br />
+				Twitter: <strong><a href="http://twitter.com/flashblue80">twitter.com/flashblue80</a></strong>
+			</div>
+			<p>&nbsp;</p>
+			
+			<h2 class="alt">Table of Contents</h2>
+			<ol class="alpha">
+				<li><a href="#directories">Directories</a></li>
+				<li><a href="#font">Font Used</a></li>
+				<li><a href="#colors">Color Schema</a></li>
+				<li><a href="#countdown">Countdown Date</a></li>
+				<li><a href="#bg">Background Image - Video</a></li>
+				<li><a href="#mailchimp">MailChimp</a></li>
+				<li><a href="#contact">Contact Form</a></li>
+				<li><a href="#googlemaps">Google Maps</a></li>				
+			</ol>
+			
+			<hr />
+			<h3 id="directories">A) Directories</h3>
+			<p>
+				<b>source</b> - PSD files.
+			</p>
+			<p>
+				<b>deploy</b> – Published files to use the theme where you can modify all content and features.
+				These are the files you need to <span class="note">upload to your server</span>.
+			</p>
+			<p><b>help</b> – Help file (HTML)</p>
+			
+			<hr />
+			<h3 id="font">B) Font Used</h3>
+			<p>
+				<strong>Open Sans</strong> (You can download it here as free: <a href="http://www.fontsquirrel.com/fonts/open-sans" target="_blank">http://www.fontsquirrel.com/fonts/open-sans</a>)<br />
+				<strong>Font Awesome</strong> (If you want to use another set of icons go to this site and choose the icons that you want <a href="http://fortawesome.github.io/Font-Awesome/" target="_blank">http://fortawesome.github.io/Font-Awesome/</a>)
+			</p>
+			<p>You can change font from CSS file.</p>
+			
+			<hr />
+			<h3 id="colors">C) Color Schema</h3>
+			<p>Prizm comes with 6 predefined colors <strong>green</strong>, <strong>blue</strong>, <strong>orange</strong>, <strong>purple</strong>, <strong>yellow</strong> and <strong>grey</strong>.</p>
+			<p>You can change the color of theme by the following code in demo HTML sources, <em>&lt;head&gt;</em> tag:
+<pre class="prettyprint lang-html linenums">
+&lt;link class="colors" rel="stylesheet" href="layout/colors/green.css" type="text/css"&gt;
+</pre>
+			
+			<hr />
+			<h3 id="countdown">D) Countdown Date</h3>
+			<p>To change the date of the countdown, go to <b>layout/js/</b> folder and open <b>main.js</b> file. Find to:</p>
+			<pre class="prettyprint lang-js linenums">
+date:"Dec 25, 2017 20:30:00"
+</pre>
+			<p>and change to the date you want.</p>
+			
+			<hr />
+			<h3 id="bg">E) Background Image - Video</h3>
+			<p><strong>Single Image</strong></p>
+			<p>Open <strong>image.html</strong> in a text editor. You'll see the following code:</p>
+			<pre class="prettyprint lang-js linenums">
+$("header").backstretch("images/slide/1.jpg");
+</pre>			
+			
+			<p><strong>Image Slideshow</strong></p>
+			<p>Open <strong>slide.html</strong> in a text editor. You'll see the following code:</p>
+			<pre class="prettyprint lang-js linenums">
+$("header").backstretch([
+	"images/slide/1.jpg", 
+	"images/slide/2.jpg", 
+	"images/slide/3.jpg", 
+	"images/slide/4.jpg"
+], {duration:3000, fade:750});
+</pre>	
+			
+			<p><strong>Youtube Background</strong></p>
+			<p>Open <strong>video.html</strong> in a text editor. You'll see the following code:</p>
+			<pre class="prettyprint lang-html linenums">
+&lt;div id="BackgroundVideo" class="player" 
+    data-property="{videoURL:'https://www.youtube.com/watch?v=t4CUNVYxxZM', containment:'header', autoPlay:true, showControls:false, mute:false, startAt:0, opacity:1, showYTLogo:false, vol:25}"&gt;
+&lt;/div&gt;
+</pre>		
+
+			<p>You can the video by replacing <strong>t4CUNVYxxZM</strong> with your own Youtube video ID.</p>
+			
+			<hr />
+			<h3 id="mailchimp">F) MailChimp</h3>
+			<p>MailChimp is intergrated to Prizm.</p>
+			<p>Mailchimp (subscription) in the file changes <strong>main.js</strong>.</p>
+			<p>In url parameter you have to put your signup form URL. Follow these steps to get this URL address:</p>
+			
+			<ol>
+				<li>Login to <strong>MailChimp</strong> and go to <strong>Lists</strong></li>
+				<li>Open your chosen list and click on <strong>Signup</strong> forms</li>
+				<li>Click on <strong>General</strong> forms</li>
+				<li>Find Signup form URL, copy the URL</li>
+				<li>Open in your browser this page: <a href="http://www.unshorten.it/" target="_blank">www.unshorten.it</a>, paste Signup form URL and press unshorten button</li>
+				<li>You'll resolve URL similar to this one:
+				</li>
+			</ol>	
+				
+				<pre class="prettyprint lang-html linenums">
+http://xxx.xxx.list-manage.com/subscribe?u=xxx&id=xxx
+</pre>
+
+			<p>Please add /post after subscribe:</p>
+			<pre class="prettyprint lang-html linenums">
+http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
+</pre>
+
+			<p>Finally, copy URL and paste to url in <strong>main.js</strong></p>
+			<pre class="prettyprint lang-html linenums">
+http://xxx.xxx.list-manage.com/subscribe/post?u=xxx&id=xxx
+</pre>
+
+			<hr />
+			<h3 id="contact">G) Contact Form</h3>
+			<p>You need to configure <strong>contact.php</strong> to get e-mails from the users.</p>
+			<p>Change those variables on <strong>line 11</strong> with the real name & e-mail address to send the mail information:</p>
+			<pre class="prettyprint lang-php linenums">
+$toName = "Prizm";
+$toAddress = "email@sitename.com";
+</pre>
+
+			<hr />
+			<h3 id="googlemaps">H) Google Maps</h3>
+			<p>
+				Please, get an API key here:<br />
+				<a href="https://developers.google.com/maps/documentation/javascript/get-api-key" target="_blank">https://developers.google.com/maps/documentation/javascript/get-api-key</a>
+			</p>
+			<p>To change Google Maps options, you need to change variables in demo pages:</p>
+			
+			<pre class="prettyprint lang-js linenums">
+var arrMap = {
+    "title":"Los Angeles, United States",
+    "latitude":33.956408,
+    "longitude":-118.188726,
+    "zoom":10,
+    "marker":"layout/images/map-marker-green.png",
+    "color":"#24b7a4"
+}
+</pre>		
+
+		</div>
+		
+		<!-- Social profiles -->
+		<footer>				
+			<div class="container social">
+				<a href="http://twitter.com/flashblue80" target="_blank" title="Twitter" class="twitter"><i class="icon-twitter"></i></a> 
+				<a href="http://www.facebook.com/flashbluedesign" target="_blank" title="Facebook" class="facebook"><i class="icon-facebook"></i></a>				 
+				<a href="http://plus.google.com/114361730793593826266" target="_blank" title="Google+" class="googleplus"><i class="icon-gplus"></i></a> 
+				<a href="http://www.linkedin.com/in/samiyilmaz80" target="_blank" title="Linkedin" class="linkedin"><i class="icon-linkedin"></i></a> 
+				<a href="http://samiyilmaz.deviantart.com/" target="_blank" title="Deviant Art" class="deviantart"><i class="icon-deviantart"></i></a> 
+				<a href="http://www.behance.net/flashblue" target="_blank" title="Behance" class="behance"><i class="icon-behance"></i></a> 
+				<a href="http://www.dribbble.com/flashblue" target="_blank" title="Dribbble" class="dribbble"><i class="icon-dribbble"></i></a> 
+				<a href="http://pinterest.com/flashblue80" target="_blank" title="Pinterest" class="pinterest"><i class="icon-pinterest-circled"></i></a> 
+				<a href="http://www.flickr.com/photos/flashblue" target="_blank" title="Flickr" class="flickr"><i class="icon-flickr"></i></a> 
+				<a href="http://www.youtube.com/user/flashblue80" target="_blank" title="YouTube" class="youtube"><i class="icon-youtube-play"></i></a>
+				<a href="https://vimeo.com/flashblue" target="_blank" title="Vimeo" class="vimeo"><i class="icon-vimeo"></i></a>				 
+				<a href="http://www.stumbleupon.com/stumbler/flashblue80" target="_blank" title="StumbleUpon" class="stumbleupon"><i class="icon-stumbleupon"></i></a> 
+				<a href="http://flashblue80.tumblr.com/" target="_blank" title="Tumblr" class="tumblr"><i class="icon-tumblr"></i></a> 
+				<a href="http://www.reddit.com/user/flashblue" target="_blank" title="Reddit" class="reddit"><i class="icon-reddit"></i></a> 
+				<a href="http://www.codegrape.com/feeds/user/flashblue.atom" target="_blank" title="RSS Feed" class="rss"><i class="icon-rss"></i></a>
+			</div>
+		</footer>
+		
+		<!-- Go to top arrow -->
+		<div class="totop">
+		   <div class="gototop">
+				<div class="arrowgototop"></div>
+		   </div>
+	  	</div>
+	  
+	</body>
+</html>
